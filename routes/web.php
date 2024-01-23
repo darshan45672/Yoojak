@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/',[DashboardController::class, 'index'])->name('home');
+
+Route::get('/about', [DashboardController::class, 'about'])->name('about');
+Route::get('/contact', [DashboardController::class,'contact'])->name('contact');
+Route::get('/placement', [DashboardController::class,'placement'])->name('placement');

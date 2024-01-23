@@ -54,8 +54,8 @@
             <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> info@mydomain.com</a> 
           </div>
           <div class="col-lg-3 text-right">
-            <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
-            <a href="register.html" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Register</a>
+            <a href="#" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
+            <a href="#" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Register</a>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="d-flex align-items-center">
           <div class="site-logo">
-            <a href="index.html" class="d-block">
+            <a href="{{ route('home') }}" class="d-block">
               <img src="images/logo.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
@@ -73,23 +73,20 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li class="active">
-                  <a href="index.html" class="nav-link text-left">Home</a>
+                  <a href="{{route('home')}}" class="nav-link text-left">Home</a>
                 </li>
                 <li class="has-children">
-                  <a href="about.html" class="nav-link text-left">About Us</a>
+                  <a href="#" class="nav-link text-left">About Us</a>
                   <ul class="dropdown">
-                    <li><a href="teachers.html">Our Teachers</a></li>
-                    <li><a href="about.html">Our School</a></li>
+                    <li><a href="teachers.html">Our Placement</a></li>
+                    <li><a href="{{route('about')}}">Our Institution</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="admissions.html" class="nav-link text-left">Admissions</a>
+                  <a href="{{route('placement')}}" class="nav-link text-left">Placements</a>
                 </li>
                 <li>
-                  <a href="courses.html" class="nav-link text-left">Courses</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav-link text-left">Contact</a>
+                    <a href="{{route('contact')}}" class="nav-link text-left">Contact</a>
                   </li>
               </ul>                                                                                                                                                                                                                                                                                          </ul>
             </nav>
@@ -197,7 +194,7 @@
         <div class="row mb-5 justify-content-center text-center">
           <div class="col-lg-6 mb-5">
             <h2 class="section-title-underline mb-3">
-              <span>Popular Courses</span>
+              <span>Placed Students</span>
             </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, id?</p>
           </div>
@@ -627,7 +624,7 @@
             <div class="copyright">
                 <p>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >DevNation</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
             </div>
