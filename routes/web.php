@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,5 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[DashboardController::class, 'index'])->name('home');
 
 Route::get('/about', [DashboardController::class, 'about'])->name('about');
+
 Route::get('/contact', [DashboardController::class,'contact'])->name('contact');
+
 Route::get('/placement', [DashboardController::class,'placement'])->name('placement');
+
+Route::get('/login', [AuthController::class,'login'])->name('login');
+Route::get('/register', [AuthController::class,'login'])->name('register');
+
