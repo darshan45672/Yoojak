@@ -17,7 +17,6 @@ class DashboardController extends Controller
     public function contact(){
         return view('contact');
     }
-
     public function placement(){
         return view('placement');
     }
