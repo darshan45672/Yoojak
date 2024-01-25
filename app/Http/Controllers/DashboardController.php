@@ -17,6 +17,5 @@ class DashboardController extends Controller
     }
     public function placement(){
         return view('placement');
-    }
-    
+    }   
 }
