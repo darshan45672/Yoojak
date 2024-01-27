@@ -2,20 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\RegisterEmail;
+use App\Models\Idea;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
-{
+class DashboardController extends Controller {
     public function index(){
-        return view('index');
+
+        $ideas = Idea::with('user','comments.user')->orderBy('created_at', 'DESC');
+
+        if(request()->has('search')){
+            $ideas = $ideas->where('content','like','%'.request()->get('search','') .'%');
+        }
+
+        return view("dashboard",[
+            'ideas' => $ideas->paginate(5),
+        ]);
     }
-    public function about(){
-        return view('about');
-    }
-    public function contact(){
-        return view('contact');
-    }
-    public function placement(){
-        return view('placement');
-    }   
 }

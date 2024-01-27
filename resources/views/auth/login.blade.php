@@ -1,69 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>{{config('app.name')}}</title>
-  @include('app.links')
-</head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-  <div class="site-wrap">
-
-    @include('app.nav')
-
-    
-    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">
-        <div class="container">
-          <div class="row align-items-end justify-content-center text-center">
-            <div class="col-lg-7">
-              <h2 class="mb-0">Login</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+@extends('layout.layout')
+@section('title', 'Login')
+@section('content')
+<div class="row justify-content-center">
+    <div class="col-12 col-sm-8 col-md-6">
+        <form class="form mt-5" action="{{ route('login') }}" method="post">
+            @csrf
+            <h3 class="text-center text-dark">Login</h3>
+            <div class="form-group mt-3">
+                <label for="email" class="text-dark">Email:</label><br>
+                <input type="email" name="email" id="email" class="form-control">
             </div>
-          </div>
-        </div>
-      </div> 
-    
-
-    <div class="custom-breadcrumns border-bottom">
-      <div class="container">
-        <a href="{{route('home')}}">Home</a>
-        <span class="mx-3 icon-keyboard_arrow_right"></span>
-        <span class="current">Login</span>
-      </div>
-    </div>
-
-    <div class="site-section">
-        <div class="container">
-
-
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <div class="row">
-                        <div class="col-md-12 form-group">
-                            <label for="username">Username</label>
-                            <input type="text" id="username" class="form-control form-control-lg">
-                        </div>
-                        <div class="col-md-12 form-group">
-                            <label for="pword">Password</label>
-                            <input type="text" id="pword" class="form-control form-control-lg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <input type="submit" value="Log In" class="btn btn-primary btn-lg px-5">
-                        </div>
-                    </div>
-                </div>
+            <div class="form-group mt-3">
+                <label for="password" class="text-dark">Password:</label><br>
+                <input type="password" name="password" id="password" class="form-control">
             </div>
-            
-
-          
-        </div>
+            <div class="form-group">
+                <label for="remember-me" class="text-dark"></label><br>
+                <input type="submit" name="submit" class="btn btn-dark btn-md" value="submit">
+            </div>
+            <div class="text-right mt-2">
+                <a href="/register" class="text-dark">Register here</a>
+            </div>
+        </form>
     </div>
-
-    @include('app.footer')
-
-</body>
-
-</html>
+</div>
+@endsection
