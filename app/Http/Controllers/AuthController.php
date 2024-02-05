@@ -50,4 +50,13 @@ class AuthController extends Controller
         }
         return redirect()->route('login')->withErrors(['email' =>"no user found",]);
     }
+
+    public function logout(){
+        auth()->logout();
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+
+        return redirect()->route('home')->with('sucess','Logged out sucessfully !');
+    }
+
 }
