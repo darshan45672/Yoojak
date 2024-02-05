@@ -32,6 +32,7 @@
                         <div class="col-md-12 form-group">
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name" class="form-control form-control-lg">
+                        
                         </div>
                         <div class="col-md-12 form-group">
                             <label for="email">Email</label>
