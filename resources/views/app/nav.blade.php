@@ -16,7 +16,7 @@
           <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> info@mydomain.com</a> 
         </div>
         <div class="col-lg-3 text-right">
-          <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
+          <a href="{{ route('login') }}" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
           <a href="{{ route('register') }}" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Register</a>
         </div>
       </div>
