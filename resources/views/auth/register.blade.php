@@ -1,5 +1,7 @@
 @extends('app.layout')
 
+@section('title','Register |')
+    
 @section('main')
 <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">
     <div class="container">
@@ -14,7 +16,7 @@
 
 <div class="custom-breadcrumns border-bottom">
     <div class="container">
-        <a href="index.html">Home</a>
+        <a href="{{ route('home') }}">Home</a>
         <span class="mx-3 icon-keyboard_arrow_right"></span>
         <span class="current">Register</span>
     </div>
@@ -22,33 +24,36 @@
 
 <div class="site-section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <div class="row">
-                    <div class="col-md-12 form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" class="form-control form-control-lg">
+        <form action="{{ route('register') }}" method="POST">
+            @csrf
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="password_confirmation" id="confirm-password" class="form-control form-control-lg">
+                        </div>
                     </div>
-                    <div class="col-md-12 form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control form-control-lg">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="submit" name="submit" class="btn btn-primary btn-lg px-5" value="submit" >
+                        </div>
                     </div>
-                    <div class="col-md-12 form-group">
-                        <label for="pword">Password</label>
-                        <input type="password" id="pword" class="form-control form-control-lg">
-                    </div>
-                    <div class="col-md-12 form-group">
-                        <label for="pword2">Re-type Password</label>
-                        <input type="password" id="pword2" class="form-control form-control-lg">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <input type="submit" value="Register" class="btn btn-primary btn-lg px-5">
-                    </div>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
 @endsection
