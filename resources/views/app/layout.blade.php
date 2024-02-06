@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>{{ config('app.name') }}</title>
+    <title>@yield('title') {{ config('app.name') }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,7 +23,10 @@
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    @yield('main')
+    <div class="site-wrap">
+        @include('app.nav')
+        @yield('main')
+    </div>
     @include('app.footer')
 </body>
 

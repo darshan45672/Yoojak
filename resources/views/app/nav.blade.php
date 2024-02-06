@@ -10,14 +10,26 @@
   <div class="py-2 bg-light">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-9 d-none d-lg-block">
+        <div class="col-lg-8 d-none d-lg-block">
           <a href="#" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> Have a questions?</a> 
           <a href="#" class="small mr-3"><span class="icon-phone2 mr-2"></span> 10 20 123 456</a> 
           <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> info@mydomain.com</a> 
         </div>
-        <div class="col-lg-3 text-right">
-          <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
-          <a href="register.html" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Register</a>
+        <div class="col-lg-4 text-right">
+          @guest
+          <a href="{{ route('login') }}" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>    
+          <a href="{{ route('register') }}" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Register</a>
+          @endguest
+
+          @auth    
+          <div class="text-right d-flex">
+            <a href="{{ route('login') }}" class="mt-2 small mr-3"><span class="icon-unlock-alt mr-1"></span>{{ Auth::user()->name }} </a>
+          <form action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button  class="btn btn-danger ml-4" type="submit"><span class="icon-unlock-alt"></span> Log Out</button>
+          </form>
+          </div>
+          @endauth
         </div>
       </div>
     </div>
@@ -35,7 +47,7 @@
           <nav class="site-navigation position-relative text-right" role="navigation">
             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
               <li class="active">
-                <a href="index.html" class="nav-link text-left">Home</a>
+                <a href="{{ route('home') }}" class="nav-link text-left">Home</a>
               </li>
               <li class="has-children">
                 <a href="about.html" class="nav-link text-left">About Us</a>
