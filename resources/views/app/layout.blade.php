@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <link href="{{ asset('css/jquery.mb.YTPlayer.min.css') }}" media="all" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('user/css/style.css') }}" /> --}}
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">

@@ -25,4 +25,8 @@ class DashboardController extends Controller
         return view('contact');
     }
 
+    public function profile(){
+        return view('user.user-profile-layout.layout');
+    }
+
 }
