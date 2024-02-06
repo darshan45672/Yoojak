@@ -16,7 +16,8 @@
         @include('user.user-profile-layout.sidebar')
         <div class="col-lg-9">
             <div class="card border-0 shadow mb-4">
-                <form action="" method="POST">
+                <form action="{{ route('profile.update') }}" method="POST">
+                    @csrf
                     <div class="card-body  p-4">
                         <h3 class="fs-4 mb-1">My Profile</h3>
                         <div class="mb-4">
@@ -46,7 +47,7 @@
                         </div>
                     </div>
                     <div class="card-footer  p-4">
-                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="submit" name="submit" value="submit" class="btn btn-primary">Update</button>
                     </div>
                 </form>
             </div>
