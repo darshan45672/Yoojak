@@ -15,7 +15,7 @@
 <body data-instant-intensity="mousedown">
 @include('user.user-profile-layout.nav')
 <section class="section-5 bg-2">
-    @include('user.userProfile')
+    @yield('main')
 </section>
 
 @include('user.user-profile-layout.footer')

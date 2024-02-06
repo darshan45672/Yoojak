@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
@@ -57,6 +58,14 @@ class AuthController extends Controller
         request()->session()->regenerateToken();
 
         return redirect()->route('home')->with('sucess','Logged out sucessfully !');
+    }
+
+    public function profile(){
+        $id = Auth::user()->id;
+
+        $user = User::where('id',$id)->first();
+
+        return view('user.userProfile', ['user' => $user]);
     }
 
 }
