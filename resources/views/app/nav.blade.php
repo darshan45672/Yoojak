@@ -50,17 +50,20 @@
                 <a href="{{ route('home') }}" class="nav-link text-left">Home</a>
               </li>
               <li class="has-children">
-                <a href="about.html" class="nav-link text-left">About Us</a>
+                <a href="{{ route('about') }}" class="nav-link text-left">About Us</a>
                 <ul class="dropdown">
-                  <li><a href="teachers.html">Our Institution</a></li>
-                  <li><a href="about.html">Our Placements</a></li>
+                  <li><a href="https://ajiet.edu.in/" target="blank">Our Institution</a></li>
+                  <li><a href="{{ route('about') }}">Our Placements</a></li>
                 </ul>
               </li>
               <li>
-                <a href="admissions.html" class="nav-link text-left">Placed Students</a>
+                <a href="{{ route('placedStudents') }}" class="nav-link text-left">Placed Students</a>
               </li>
               <li>
-                  <a href="contact.html" class="nav-link text-left">Contact</a>
+                <a href="{{ route('placementUpdates') }}" class="nav-link text-left">Placement Updates</a>
+              </li>
+              <li >
+                  <a href="{{ route('contact') }}" class="nav-link text-left">Contact</a>
                 </li>
             </ul>                                                                                                                                                                                                                                                                                          </ul>
           </nav>
