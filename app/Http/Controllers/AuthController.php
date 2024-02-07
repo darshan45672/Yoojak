@@ -62,19 +62,12 @@ class AuthController extends Controller
     }
 
     public function show(User $user){
-        // $id = Auth::user()->id;
-
-        // $user = User::where('id',$id)->first();
 
         return view('user.userProfileShow', compact('user'));
     }
 
-    public function profileEdit(){
-        $id = Auth::user()->id;
-
-        $user = User::where('id',$id)->first();
-
-        return view('user.userProfileEdit', ['user' => $user]);
+    public function edit(User $user){
+        return view('user.userProfileEdit', compact('user'));
     }
 
     public function updateProfile(){

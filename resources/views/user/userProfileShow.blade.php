@@ -20,18 +20,18 @@
                         <h3 class="fs-4 mb-1">My Profile</h3>
                         <div class="mb-4">
                             <label for="name" class="mb-2">Name*</label>
-                            <div class="container border border-1 p-2">{{ $user->name }}</div>
+                            <div class="container border border-1 p-2">{{ Auth::user()->name }}</div>
                         </div>
                         <div class="mb-4">
                             <label for="email" class="mb-2">Email*</label>
-                            <div class="container border border-1 p-2">{{ $user->email }}</div>
+                            <div class="container border border-1 p-2">{{ Auth::user()->email }}</div>
                         </div>
                         <div class="mb-4">
                             <label for="usn" class="mb-2">USN*</label>
                             @if ($user->usn === null)
                             <div class="container border border-1 p-2"> Add your USN</div>
                             @else    
-                            <div class="container border border-1 p-2">{{ $user->usn }}</div>
+                            <div class="container border border-1 p-2">{{ Auth::user()->usn }}</div>
                             @endif
                         </div>
                         <div class="mb-4">
@@ -39,7 +39,7 @@
                             @if ($user->branch === null)
                             <div class="container border border-1 p-2">Add your Branch</div>
                             @else    
-                            <div class="container border border-1 p-2">{{ $user->branch }}</div>
+                            <div class="container border border-1 p-2">{{ Auth::user()->branch }}</div>
                             @endif
                         </div>
                         <div class="mb-4">
@@ -47,7 +47,7 @@
                             @if ($user->mobile === null)
                             <div class="container border border-1 p-2">Add your Mobile Number</div>
                             @else    
-                            <div class="container border border-1 p-2">{{ $user->mobile }}</div>
+                            <div class="container border border-1 p-2">{{ Auth::user()->mobile }}</div>
                             @endif
                         </div>
                     </div>

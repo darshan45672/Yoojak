@@ -22,7 +22,8 @@ Route::get('/placement-updates',[DashboardController::class, 'placementUpdates']
 Route::get('/contact',[DashboardController::class, 'contact']) ->name('contact');
 
 Route::get('/profile/{id}',[AuthController::class, 'show']) ->name('profile.show')->middleware('auth');
-// Route::get('/profile/{id}/edit',[AuthController::class, 'profileEdit']) ->name('profile.edit')->middleware('auth');
+Route::get('/profile/{id}/edit',[AuthController::class, 'edit']) ->name('profile.edit')->middleware('auth');
+Route::put('/profile/{id}',[AuthController::class, 'update']) ->name('profile.update')->middleware('auth');
 // Route::post('/profile',[AuthController::class, 'updateProfile']) ->name('profile.update')->middleware('auth');
 
 Route::get('/register', [AuthController::class, 'register']) ->name('register');
