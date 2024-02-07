@@ -7,7 +7,8 @@
             <nav aria-label="breadcrumb" class=" rounded-3 p-3 mb-4">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="breadcrumb-item active">Profile</li>
+                    <li class="breadcrumb-item"><a href="{{ route('profile') }}">Profile</a></li>
+                    <li class="breadcrumb-item active">Profile Edit</li>
                 </ol>
             </nav>
         </div>
@@ -16,7 +17,7 @@
         @include('user.user-profile-layout.sidebar')
         <div class="col-lg-9">
             <div class="card border-0 shadow mb-4">
-                <form action="{{ route('profile.update') }}" method="POST">
+                <form action="" method="POST">
                     @csrf
                     <div class="card-body  p-4">
                         <h3 class="fs-4 mb-1">My Profile</h3>

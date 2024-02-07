@@ -21,8 +21,9 @@ Route::get('/placed-students',[DashboardController::class, 'placed']) ->name('pl
 Route::get('/placement-updates',[DashboardController::class, 'placementUpdates']) ->name('placementUpdates');
 Route::get('/contact',[DashboardController::class, 'contact']) ->name('contact');
 
-Route::get('/profile',[AuthController::class, 'profile']) ->name('profile')->middleware('auth');
-Route::post('/profile',[AuthController::class, 'updateProfile']) ->name('profile.update')->middleware('auth');
+Route::get('/profile/{id}',[AuthController::class, 'show']) ->name('profile.show')->middleware('auth');
+// Route::get('/profile/{id}/edit',[AuthController::class, 'profileEdit']) ->name('profile.edit')->middleware('auth');
+// Route::post('/profile',[AuthController::class, 'updateProfile']) ->name('profile.update')->middleware('auth');
 
 Route::get('/register', [AuthController::class, 'register']) ->name('register');
 Route::post('/register', [AuthController::class, 'store']) ->name('register');
