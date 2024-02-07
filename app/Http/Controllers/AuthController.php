@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
@@ -59,4 +61,37 @@ class AuthController extends Controller
         return redirect()->route('home')->with('sucess','Logged out sucessfully !');
     }
 
+    public function show(User $user){
+
+        return view('user.userProfileShow', compact('user'));
+    }
+
+    public function edit(User $user){
+        return view('user.userProfileEdit', compact('user'));
+    }
+
+    public function updateProfile(){
+        $id = Auth::user()->id;
+
+        $validator = Validator::make(request()->all(),[
+            'name' => 'required|min:5|max:20',
+            'email' => 'required|email|unique:users,email,'.$id.',id',
+            'usn' => 'required|min:7|max:7|unique:users,usn,'.$id.',id',
+            'mobile' =>'required| min:10| max:10',
+        ]);
+
+        if($validator->passes()){
+            $user = User::find($id);
+
+            $user->name = request()->name;
+            $user->email = request()->email;
+            $user->usn = request()->usn;
+            $user->branch = request()->branch;
+            $user->mobile = request()->mobile;
+
+            $user->save();
+
+            // return redirect()->route('profile')->with('sucess','Logged out sucessfully !');
+        }
+    }
 }

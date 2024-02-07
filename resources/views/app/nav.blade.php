@@ -23,7 +23,7 @@
 
           @auth    
           <div class="text-right d-flex">
-            <a href="{{ route('login') }}" class="mt-2 small mr-3"><span class="icon-unlock-alt mr-1"></span>{{ Auth::user()->name }} </a>
+            <a href="{{ route('profile.show', Auth::user()->id) }}" class="mt-2 small mr-3"><span class="icon-unlock-alt mr-1"></span>{{ Auth::user()->name }} </a>
           <form action="{{ route('logout') }}" method="POST">
             @csrf
             <button  class="btn btn-danger ml-4" type="submit"><span class="icon-unlock-alt"></span> Log Out</button>

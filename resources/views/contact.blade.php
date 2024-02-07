@@ -54,7 +54,7 @@
 
         <div class="row">
             <div class="col-12">
-                <input type="submit" value="Send Message" class="btn btn-primary btn-lg px-5">
+                <input type="submit" value="submit" class="btn btn-primary btn-lg px-5">
             </div>
         </div>
     </div>
