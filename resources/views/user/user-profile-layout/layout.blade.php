@@ -16,6 +16,7 @@
 @include('user.user-profile-layout.nav')
 <section class="section-5 bg-2">
     @yield('main')
+	@yield('customJS')
 </section>
 
 @include('user.user-profile-layout.footer')
