@@ -28,7 +28,7 @@
                         </div>
                         <div class="mb-4">
                             <label for="usn" class="mb-2">USN*</label>
-                            @if ($user->usn === null)
+                            @if (Auth::user()->usn === null)
                             <div class="container border border-1 p-2"> Add your USN</div>
                             @else    
                             <div class="container border border-1 p-2">{{ Auth::user()->usn }}</div>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="mb-4">
                             <label for="branch" class="mb-2">Branch*</label>
-                            @if ($user->branch === null)
+                            @if (Auth::user()->branch === null)
                             <div class="container border border-1 p-2">Add your Branch</div>
                             @else    
                             <div class="container border border-1 p-2">{{ Auth::user()->branch }}</div>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="mb-4">
                             <label for="mobile" class="mb-2">Mobile*</label>
-                            @if ($user->mobile === null)
+                            @if (Auth::user()->mobile === null)
                             <div class="container border border-1 p-2">Add your Mobile Number</div>
                             @else    
                             <div class="container border border-1 p-2">{{ Auth::user()->mobile }}</div>
