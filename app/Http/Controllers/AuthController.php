@@ -70,28 +70,43 @@ class AuthController extends Controller
         return view('user.userProfileEdit', compact('user'));
     }
 
-    public function updateProfile(){
-        $id = Auth::user()->id;
+    public function update(User $user){
 
-        $validator = Validator::make(request()->all(),[
-            'name' => 'required|min:5|max:20',
-            'email' => 'required|email|unique:users,email,'.$id.',id',
-            'usn' => 'required|min:7|max:7|unique:users,usn,'.$id.',id',
-            'mobile' =>'required| min:10| max:10',
-        ]);
+        // $validator = Validator::make(request()->all(),[
+        //     'name' => 'required|min:5|max:20',
+        //     'email' => 'required|email|unique:users,email,'.$id.',id',
+        //     'usn' => 'required|min:7|max:7|unique:users,usn,'.$id.',id',
+        //     'mobile' =>'required| min:10| max:10',
+        // ]);
 
-        if($validator->passes()){
-            $user = User::find($id);
+        // if($validator->passes()){
+        //     $user = User::find($id);
 
-            $user->name = request()->name;
-            $user->email = request()->email;
-            $user->usn = request()->usn;
-            $user->branch = request()->branch;
-            $user->mobile = request()->mobile;
+        //     $user->name = request()->name;
+        //     $user->email = request()->email;
+        //     $user->usn = request()->usn;
+        //     $user->branch = request()->branch;
+        //     $user->mobile = request()->mobile;
 
-            $user->save();
+        //     $user->save();
 
             // return redirect()->route('profile')->with('sucess','Logged out sucessfully !');
-        }
+
+            dd(request()->all);
+            $id = Auth::user()->id;
+           $validated = request()->validate(
+            [
+                'name' => 'required|min:5|max:20',
+                'email' => 'required|email|unique:users,email,'.$id.',id',
+                'usn' => 'required|min:7|max:10|unique:users,usn,'.$id.',id',
+                'mobile' =>'required| min:10| max:10',
+                'branch' =>'required| min:3| max:50',
+            ]
+            );
+
+            $user->update($validated);
+
+            return redirect()->route('home');
+    
     }
 }

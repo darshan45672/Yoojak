@@ -27,28 +27,40 @@
                             <input type="text" name="name" id="name" placeholder="Enter Name" class="form-control"
                                 value="{{ Auth::user()->name }}">
                             @error('name')
-                                
+                            <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="mb-4">
                             <label for="email" class="mb-2">Email*</label>
                             <input type="text" name="email" id="email" placeholder="Enter Email" class="form-control"
-                                value="{{ $user->email }}">
+                                value="{{ Auth::user()->email }}">
+                                @error('email')
+                                <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                                @enderror
                         </div>
                         <div class="mb-4">
                             <label for="usn" class="mb-2">USN*</label>
                             <input type="text" name="usn" id="usn" placeholder="Enter USN" class="form-control"
-                                value="{{ $user->usn }}">
+                                value="{{ Auth::user()->usn }}">
+                                @error('usn')
+                                <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                                @enderror
                         </div>
                         <div class="mb-4">
                             <label for="branch" class="mb-2">Branch*</label>
                             <input type="text" name="branch" id="branch" placeholder="Branch" class="form-control"
-                                value="{{ $user->branch }}">
+                                value="{{ Auth::user()->branch }}">
+                                @error('branch')
+                            <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                            @enderror
                         </div>
                         <div class="mb-4">
                             <label for="mobile" class="mb-2">Mobile*</label>
                             <input type="text" name="mobile" id="mobile" placeholder="Mobile" class="form-control"
-                                value="{{ $user->mobile }}">
+                                value="{{ Auth::user()->mobile }}">
+                                @error('mobile')
+                                <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                                @enderror
                         </div>
                     </div>
                     <div class="card-footer  p-4">
