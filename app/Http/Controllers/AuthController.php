@@ -61,37 +61,50 @@ class AuthController extends Controller
         return redirect()->route('home')->with('sucess','Logged out sucessfully !');
     }
 
-    public function show(User $user){
+    public function show(){
+        $id = Auth::user()->id;
+        $user = User::where('id',$id)->first();
 
-        return view('user.userProfileShow', compact('user'));
+        return view('user.userProfileShow', [
+            'user' => $user
+        ]);
     }
 
     public function edit(User $user){
         return view('user.userProfileEdit', compact('user'));
     }
 
-    public function updateProfile(){
+    public function update(Request $request){
         $id = Auth::user()->id;
-
-        $validator = Validator::make(request()->all(),[
-            'name' => 'required|min:5|max:20',
-            'email' => 'required|email|unique:users,email,'.$id.',id',
-            'usn' => 'required|min:7|max:7|unique:users,usn,'.$id.',id',
-            'mobile' =>'required| min:10| max:10',
-        ]);
+        $validator = Validator::make($request->all(),[
+            'name' => 'required|min:4|max:20',
+            'email'=> 'required|email|unique:users,email,'.$id.',id',
+            'usn'=> 'required|min:9|max:10|unique:users,usn,'.$id.',id',
+            'mobile' =>'required|min:10|max:10',
+            'branch' => 'required|min:3|max:20'
+        ]);    
 
         if($validator->passes()){
             $user = User::find($id);
-
-            $user->name = request()->name;
-            $user->email = request()->email;
-            $user->usn = request()->usn;
-            $user->branch = request()->branch;
-            $user->mobile = request()->mobile;
-
+            $user->name= $request->name;
+            $user->email= $request->email;
+            $user->usn= $request->usn;
+            $user->branch= $request->branch;
+            $user->mobile= $request->mobile;
             $user->save();
 
-            // return redirect()->route('profile')->with('sucess','Logged out sucessfully !');
+            session()->flash('success','profile updated sucessfully');
+
+            return response()->json([
+                'status' => true,
+                'errors' =>[]
+            ]);
+
+        }else{
+            return response()->json([
+                'status' => false,
+                'errors' => $validator->errors()
+            ]);
         }
     }
 }
