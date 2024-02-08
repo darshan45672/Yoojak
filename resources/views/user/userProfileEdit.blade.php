@@ -93,25 +93,3 @@
 </div>
 
 @endsection
-
-@section('customJS')
-<script type="text/javascript">
-    $("#userForm").submit(function(e){
-        e.preventDefault();
-
-        $.ajax({
-            url:'{{ route('profileUpdate') }}',
-            type:'put',
-            dataType: 'json',
-            data:$("#userForm").serializeArray(),
-            success: function(response){
-                if(response.status == true){
-
-                }else{
-                }
-            }
-        })
-    })
-</script>
-    
-@endsection
