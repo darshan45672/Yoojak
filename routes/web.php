@@ -18,8 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[DashboardController::class, 'home']) ->name('home');
 
 Route::get('/about',[DashboardController::class, 'about']) ->name('about');
+
 Route::get('/placed-students',[DashboardController::class, 'placed']) ->name('placedStudents');
+
 Route::get('/placement-updates',[DashboardController::class, 'placementUpdates']) ->name('placementUpdates');
+
 Route::get('/contact',[DashboardController::class, 'contact']) ->name('contact');
 
 Route::get('/profile',[AuthController::class, 'show']) ->name('profile')->middleware('auth');
