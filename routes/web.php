@@ -16,9 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[DashboardController::class, 'home']) ->name('home');
+
 Route::get('/about',[DashboardController::class, 'about']) ->name('about');
+
 Route::get('/placed-students',[DashboardController::class, 'placed']) ->name('placedStudents');
+
 Route::get('/placement-updates',[DashboardController::class, 'placementUpdates']) ->name('placementUpdates');
+
 Route::get('/contact',[DashboardController::class, 'contact']) ->name('contact');
 
 Route::get('/profile',[AuthController::class, 'show']) ->name('profile')->middleware('auth');
@@ -30,9 +34,11 @@ Route::get('/profile',[AuthController::class, 'show'])->middleware('auth')->name
 
 
 Route::get('/register', [AuthController::class, 'register']) ->name('register');
+
 Route::post('/register', [AuthController::class, 'store']) ->name('register');
 
 Route::get('/login', [AuthController::class, 'login']) ->name('login');
+
 Route::post('/login', [AuthController::class, 'authenticate']) ->name('login');
 
 Route::post('/logout', [AuthController::class, 'logout']) ->name('logout');
