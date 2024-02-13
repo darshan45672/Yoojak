@@ -25,6 +25,10 @@ Route::get('/profile',[AuthController::class, 'show']) ->name('profile')->middle
 // Route::put('/update-profile',[AuthController::class, 'update'])->middleware('auth')->name('profileUpdate');
 // Route::get('/edit-profile',[AuthController::class, 'edit']) ->name('profile.edit')->middleware('auth');
 
+
+Route::get('/profile',[AuthController::class, 'show'])->middleware('auth')->name('profile');
+
+
 Route::get('/register', [AuthController::class, 'register']) ->name('register');
 Route::post('/register', [AuthController::class, 'store']) ->name('register');
 
