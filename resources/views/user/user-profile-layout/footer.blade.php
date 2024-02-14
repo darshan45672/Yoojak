@@ -5,7 +5,8 @@
         </script> All rights reserved by <a href=""
             target="_blank">DevNation</a></p>
     </div>
-    </footer> 
+</footer> 
+
     <script src="{{ asset('user/js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('user/js/bootstrap.bundle.5.1.3.min.js') }}"></script>
     <script src="{{ asset('user/js/instantpages.5.1.0.min.js') }}"></script>
