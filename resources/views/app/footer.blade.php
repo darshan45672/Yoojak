@@ -61,7 +61,6 @@
         stroke="#51be78" />
 </svg></div>
 
-
 <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 <script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
 <script src="{{ asset('js/jquery-ui.js') }}"></script>
