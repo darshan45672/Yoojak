@@ -27,6 +27,7 @@
                     <li><a href="#">MECH</a></li>
                 </ul>
             </div>
+            
             <div class="px-5 col-lg-3">
                 <h3 class="footer-heading"><span>Contact</span></h3>
                 <ul class="list-unstyled">
@@ -60,6 +61,7 @@
     <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#51be78" />
 </svg></div>
+
 
 <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 <script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
