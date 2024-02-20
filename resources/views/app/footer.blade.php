@@ -27,6 +27,7 @@
                     <li><a href="#">MECH</a></li>
                 </ul>
             </div>
+            
             <div class="px-5 col-lg-3">
                 <h3 class="footer-heading"><span>Contact</span></h3>
                 <ul class="list-unstyled">
