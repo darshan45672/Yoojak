@@ -30,5 +30,4 @@
     </div>
     @include('app.footer')
 </body>
-
 </html>
