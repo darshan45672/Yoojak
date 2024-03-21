@@ -1,7 +1,11 @@
 <?php
 
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\DashboardController;
+use App\Livewire\ShowAboutPlacement;
+use App\Livewire\ShowAboutUs;
+use App\Livewire\ShowContactPage;
+use App\Livewire\ShowHome;
+use App\Livewire\ShowPlacedStudents;
+use App\Livewire\ShowPlacements;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,30 +19,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[DashboardController::class, 'home']) ->name('home');
-
-Route::get('/about',[DashboardController::class, 'about']) ->name('about');
-
-Route::get('/placed-students',[DashboardController::class, 'placed']) ->name('placedStudents');
-
-Route::get('/placement-updates',[DashboardController::class, 'placementUpdates']) ->name('placementUpdates');
-
-Route::get('/contact',[DashboardController::class, 'contact']) ->name('contact');
-
-Route::get('/profile',[AuthController::class, 'show']) ->name('profile')->middleware('auth');
-// Route::put('/update-profile',[AuthController::class, 'update'])->middleware('auth')->name('profileUpdate');
-// Route::get('/edit-profile',[AuthController::class, 'edit']) ->name('profile.edit')->middleware('auth');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
-Route::get('/profile',[AuthController::class, 'show'])->middleware('auth')->name('profile');
-
-
-Route::get('/register', [AuthController::class, 'register']) ->name('register');
-
-Route::post('/register', [AuthController::class, 'store']) ->name('register');
-
-Route::get('/login', [AuthController::class, 'login']) ->name('login');
-
-Route::post('/login', [AuthController::class, 'authenticate']) ->name('login');
-
-Route::post('/logout', [AuthController::class, 'logout']) ->name('logout');
+Route::get('/', ShowHome::class)->name('home');
+Route::get('/placement', ShowPlacements::class)->name('show-Placement');
+Route::get('/placed-students', ShowPlacedStudents::class)->name('show-PlacedStudent');
+Route::get('/contact-us', ShowContactPage::class)->name('contact');
+Route::get('/about-us', ShowAboutUs::class)->name('about-us');
+Route::get('/about-our-placement', ShowAboutPlacement::class)->name('about-our-placement');
