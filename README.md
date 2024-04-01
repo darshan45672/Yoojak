@@ -26,17 +26,6 @@ Yoojak caters to a diverse audience, including students, alumni, recruiters, and
 
 The primary goal of Yoojak is to revolutionize the job placement experience for students and recruiters alike. By leveraging technology and innovation, Yoojak aims to make the job placement process more transparent, efficient, and equitable for all stakeholders. Notable achievements of the project include positive feedback from users, and strategic partnerships with leading companies in various sectors.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
