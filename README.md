@@ -1,31 +1,30 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <h1 align ="center"> <b> Yoojak </b> </h1>
 </p>
 
-## About Laravel
+## About Yoojak
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Yoojak is a placement management software designed to streamline the process of connecting college students with job opportunities. With Yoojak, students can easily browse and apply for available placements, while placement officer can efficiently manage job postings and applications. The platform facilitates seamless communication between students and placement officer, helping to bridge the gap between education and employment. Yoojak aims to simplify the placement process, empower students in their career pursuits, and assist the placement cell in finding the best talent for the recruiting organizations.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Introduction
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Yoojak is a comprehensive placement management software tailored for educational institutions seeking to optimize their job placement processes. In today's competitive job market, students often face challenges in finding suitable employment opportunities upon graduation, while the placement cell struggle to efficiently identify and engage with talented candidates. Yoojak aims to bridge this gap by offering a user-friendly platform that facilitates seamless communication and collaboration between students and the placement cell for recruiters.
 
-## Learning Laravel
+### Problem Statement
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The traditional methods of job placement within educational institutions often involve manual processes, such as bulletin boards, emails, and physical job fairs. These methods can be cumbersome, time-consuming, and inefficient for both students and placement cell. Students may miss out on valuable opportunities due to lack of awareness or difficulty in accessing relevant information, while recruiters may struggle to reach their target audience effectively. Yoojak addresses these challenges by providing a centralized digital platform that simplifies the job placement process for all stakeholders involved.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Solution
+
+Yoojak offers a range of features designed to streamline the job placement process. For students, the platform provides a user-friendly interface where they can easily search and apply for available job opportunities, upload their resumes, and track their application statuses. Placement cell, on the other hand, benefit from tools that allow them to post job openings, manage applications, and communicate with prospective candidates efficiently. Yoojak also facilitates networking and collaboration among students, alumni, and industry professionals, creating a vibrant ecosystem for career development.
+
+### Target Auidience
+
+Yoojak caters to a diverse audience, including students, alumni, recruiters, and educational institution. Students and alumni benefit from access to a wide range of job opportunities across various industries, while placement cell gain access to a pool of talented candidates from the educational institution. Educational institution themselves can leverage Yoojak to enhance their placement services, improve student outcomes, and strengthen industry partnerships.
+
+### Goals and Achievements
+
+The primary goal of Yoojak is to revolutionize the job placement experience for students and recruiters alike. By leveraging technology and innovation, Yoojak aims to make the job placement process more transparent, efficient, and equitable for all stakeholders. Notable achievements of the project include positive feedback from users, and strategic partnerships with leading companies in various sectors.
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
