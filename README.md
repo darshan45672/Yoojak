@@ -10,19 +10,19 @@ Yoojak is a placement management software designed to streamline the process of 
 
 Yoojak is a comprehensive placement management software tailored for educational institutions seeking to optimize their job placement processes. In today's competitive job market, students often face challenges in finding suitable employment opportunities upon graduation, while the placement cell struggle to efficiently identify and engage with talented candidates. Yoojak aims to bridge this gap by offering a user-friendly platform that facilitates seamless communication and collaboration between students and the placement cell for recruiters.
 
-### Problem Statement
+- ### Problem Statement
 
 The traditional methods of job placement within educational institutions often involve manual processes, such as bulletin boards, emails, and physical job fairs. These methods can be cumbersome, time-consuming, and inefficient for both students and placement cell. Students may miss out on valuable opportunities due to lack of awareness or difficulty in accessing relevant information, while recruiters may struggle to reach their target audience effectively. Yoojak addresses these challenges by providing a centralized digital platform that simplifies the job placement process for all stakeholders involved.
 
-### Solution
+- ### Solution
 
 Yoojak offers a range of features designed to streamline the job placement process. For students, the platform provides a user-friendly interface where they can easily search and apply for available job opportunities, upload their resumes, and track their application statuses. Placement cell, on the other hand, benefit from tools that allow them to post job openings, manage applications, and communicate with prospective candidates efficiently. Yoojak also facilitates networking and collaboration among students, alumni, and industry professionals, creating a vibrant ecosystem for career development.
 
-### Target Auidience
+- ### Target Auidience
 
 Yoojak caters to a diverse audience, including students, alumni, recruiters, and educational institution. Students and alumni benefit from access to a wide range of job opportunities across various industries, while placement cell gain access to a pool of talented candidates from the educational institution. Educational institution themselves can leverage Yoojak to enhance their placement services, improve student outcomes, and strengthen industry partnerships.
 
-### Goals and Achievements
+- ### Goals and Achievements
 
 The primary goal of Yoojak is to revolutionize the job placement experience for students and recruiters alike. By leveraging technology and innovation, Yoojak aims to make the job placement process more transparent, efficient, and equitable for all stakeholders. Notable achievements of the project include positive feedback from users, and strategic partnerships with leading companies in various sectors.
 
