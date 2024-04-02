@@ -26,6 +26,32 @@ Yoojak caters to a diverse audience, including students, alumni, recruiters, and
 
 The primary goal of Yoojak is to revolutionize the job placement experience for students and recruiters alike. By leveraging technology and innovation, Yoojak aims to make the job placement process more transparent, efficient, and equitable for all stakeholders. Notable achievements of the project include positive feedback from users, and strategic partnerships with leading companies in various sectors.
 
+## Features
+
+- <b>User Authentication:</b> Secure user authentication system to ensure only authorized individuals can access the platform.
+
+- <b>Student Dashboard: </b> Personalized dashboard for students to browse job opportunities, track application statuses, and manage their profiles.
+
+- <b>Recruiter Portal:</b>  Dedicated portal for recruiters to post job openings, review applications, and communicate with candidates.
+
+- <b>Job Search and Filtering:</b> Advanced search and filtering capabilities for students to find relevant job opportunities based on criteria such as industry, location, and job role.
+
+- <b>Application Management:</b> Streamlined application management system for recruiters to efficiently review, shortlist, and schedule interviews with candidates.
+
+- <b>Resume Upload and Parsing:</b> Ability for students to upload their resumes and for recruiters to parse and analyze resume data to identify qualified candidates.
+
+- <b>Messaging and Notifications:</b> Integrated messaging system for seamless communication between students and recruiters, along with notifications for important updates and events.
+
+- <b>Analytics and Reporting:</b> Insights and analytics tools for educational institutions and recruiters to track placement metrics, monitor student outcomes, and make data-driven decisions.
+
+- <b> Mobile Compatibility:</b> Responsive design and mobile compatibility to ensure access to the platform from any device, providing convenience and flexibility for users on the go.
+
+- <b> Collaborative Networking:</b> Networking features to facilitate collaboration and networking among students, alumni, industry professionals, and educational institutions.
+
+- <b>Customization and Integration: </b> Customizable features and integration options to tailor the platform to the unique needs of different educational institutions and recruitment processes.
+
+- <b>Support and Documentation: </b> Comprehensive documentation and user support resources to assist users in navigating the platform and maximizing its benefits.
+- 
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
