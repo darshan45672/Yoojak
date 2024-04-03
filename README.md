@@ -51,7 +51,15 @@ The primary goal of Yoojak is to revolutionize the job placement experience for 
 - <b>Customization and Integration: </b> Customizable features and integration options to tailor the platform to the unique needs of different educational institutions and recruitment processes.
 
 - <b>Support and Documentation: </b> Comprehensive documentation and user support resources to assist users in navigating the platform and maximizing its benefits.
-- 
+
+## Installation
+
+<u><b>Prerequisites:</b></u>
+- <b>PHP</b>: Version 8.2 or higher
+- <b>Composer</b>: Dependency manager for PHP
+- <b>Node.js and npm </b>: For managing front-end dependencies.
+
+
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
