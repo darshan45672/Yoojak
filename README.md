@@ -58,3 +58,27 @@ The primary goal of Yoojak is to revolutionize the job placement experience for 
 - <b>PHP</b>: Version 8.2 or higher
 - <b>Composer</b>: Dependency manager for PHP
 - <b>Node.js and npm </b>: For managing front-end dependencies.
+
+1. <b>Clone the Repository:</b> <br>Open your terminal and run the following command to clone the Yoojak repository from GitHub:
+    ```
+    git clone https://github.com/darshan45672/Yoojak.git
+    ```
+2. <b>Navigate to the Project Directory:</b> <br> Change into the project directory:
+    ```
+    cd Yoojak
+    ```
+3. Install Composer Dependencies: Run the following command to install the PHP dependencies using Composer:
+   ```
+   composer install
+   composer update
+   ```
+5. Generate Environment File: Make a copy of the .env.example file and save it as .env. You can do this by running:
+   ```
+   cp .env.example .env
+   ```
+7. Generate Application Key: Generate a new application key using the following command:
+8. Run Migrations and Seeders: Run database migrations and seeders to set up the database:
+9. Install Frontend Dependencies (Optional): If your project has frontend dependencies managed by npm, run the following command:
+10. Run the Development Server: Finally, start the Laravel development server:
+
+Once the server is running, you can access the Yoojak application by visiting http://localhost:8000 in your web browser.
