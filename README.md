@@ -77,8 +77,22 @@ The primary goal of Yoojak is to revolutionize the job placement experience for 
    cp .env.example .env
    ```
 7. Generate Application Key: Generate a new application key using the following command:
-8. Run Migrations and Seeders: Run database migrations and seeders to set up the database:
-9. Install Frontend Dependencies (Optional): If your project has frontend dependencies managed by npm, run the following command:
-10. Run the Development Server: Finally, start the Laravel development server:
+   ```
+   php artisan key:generate
+   ```
+9. Run Migrations and Seeders: Run database migrations and seeders to set up the database:
+    ```
+    php artisan migrate --seed
+    ```
+11. Install and Compile Frontend Dependencies: If your project has frontend dependencies managed by npm, run the following command:
+    ```
+    npm install
+    npm run build
+    ```
+13. Run the Development Server: Finally, start the Laravel development server:
+    ```
+    php artisan serve
+    npm run dev
+    ```
 
-Once the server is running, you can access the Yoojak application by visiting http://localhost:8000 in your web browser.
+Once the server is running, you can access the Yoojak application by visiting ``` http://localhost:8000 ``` in your web browser.
