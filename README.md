@@ -67,29 +67,29 @@ The primary goal of Yoojak is to revolutionize the job placement experience for 
     ```
     cd Yoojak
     ```
-3. Install Composer Dependencies: Run the following command to install the PHP dependencies using Composer:
+3. **Install Composer Dependencies:** Run the following command to install the PHP dependencies using Composer:
    ```
    composer install
    composer update
    ```
-5. Generate Environment File: Make a copy of the .env.example file and save it as .env. You can do this by running:
+5. **Generate Environment File:** Make a copy of the .env.example file and save it as .env. You can do this by running:
    ```
    cp .env.example .env
    ```
-7. Generate Application Key: Generate a new application key using the following command:
+7. **Generate Application Key:** Generate a new application key using the following command:
    ```
    php artisan key:generate
    ```
-9. Run Migrations and Seeders: Run database migrations and seeders to set up the database:
+9. **Run Migrations and Seeders:** Run database migrations and seeders to set up the database:
     ```
     php artisan migrate --seed
     ```
-11. Install and Compile Frontend Dependencies: If your project has frontend dependencies managed by npm, run the following command:
+11. **Install and Compile Frontend Dependencies:** If your project has frontend dependencies managed by npm, run the following command:
     ```
     npm install
     npm run build
     ```
-13. Run the Development Server: Finally, start the Laravel development server:
+13. **Run the Development Server:** Finally, start the Laravel development server:
     ```
     php artisan serve
     npm run dev
