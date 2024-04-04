@@ -59,11 +59,40 @@ The primary goal of Yoojak is to revolutionize the job placement experience for 
 - <b>Composer</b>: Dependency manager for PHP
 - <b>Node.js and npm </b>: For managing front-end dependencies.
 
+1. <b>Clone the Repository:</b> <br>Open your terminal and run the following command to clone the Yoojak repository from GitHub:
+    ```
+    git clone https://github.com/darshan45672/Yoojak.git
+    ```
+2. <b>Navigate to the Project Directory:</b> <br> Change into the project directory:
+    ```
+    cd Yoojak
+    ```
+3. **Install Composer Dependencies:** Run the following command to install the PHP dependencies using Composer:
+   ```
+   composer install
+   composer update
+   ```
+5. **Generate Environment File:** Make a copy of the .env.example file and save it as .env. You can do this by running:
+   ```
+   cp .env.example .env
+   ```
+7. **Generate Application Key:** Generate a new application key using the following command:
+   ```
+   php artisan key:generate
+   ```
+9. **Run Migrations and Seeders:** Run database migrations and seeders to set up the database:
+    ```
+    php artisan migrate --seed
+    ```
+11. **Install and Compile Frontend Dependencies:** If your project has frontend dependencies managed by npm, run the following command:
+    ```
+    npm install
+    npm run build
+    ```
+13. **Run the Development Server:** Finally, start the Laravel development server:
+    ```
+    php artisan serve
+    npm run dev
+    ```
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Once the server is running, you can access the Yoojak application by visiting ``` http://localhost:8000 ``` in your web browser.
